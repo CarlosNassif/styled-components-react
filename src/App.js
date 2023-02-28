@@ -1,15 +1,18 @@
 import './App.css';
 
-import { Link, StyledLink } from './components/Link';
+import Input from './components/Input';
 import Wrapper from './components/Wrapper';
 
 function App() {
   return (
     <div className='App'>
       <Wrapper>
-        <Link>Unstyled, boring link</Link>
-        <br />
-        <StyledLink>Styled, exciting link</StyledLink>
+        <Input defaultValue='Without props' type='text' />
+        <Input
+          defaultValue='With props'
+          type='text'
+          inputColor='rebeccapurple'
+        />
       </Wrapper>
     </div>
   );
